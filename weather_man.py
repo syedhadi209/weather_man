@@ -157,85 +157,81 @@ def draw(date,count,color):
 
 
 
-def switch(argument):
-    if argument == "-e":
-        try:
-            year = sys.argv[2]
-            if len(year) == 4:
-                check_for_year(year)
-            else:
-                print("Invalid Input")
-        except:
-            print("Insert correct parametrs [weather_man.py -a year(yyyy) month(Mar)]")
+# def switch(argument):
+#     if argument == "-e":
+#         try:
+#             year = sys.argv[2]
+#             if len(year) == 4:
+#                 check_for_year(year)
+#             else:
+#                 print("Invalid Input")
+#         except:
+#             print("Insert correct parametrs [weather_man.py -a year(yyyy) month(Mar)]")
 
-    elif argument == "-a":
-        try:
-            year = sys.argv[2]
-            if len(year) == 4:
-                month = sys.argv[3].capitalize()
-                check_for_month(year=year,month=month)
-            else:
-                print("Input correct format of year")
-        except:
-            print("Insert correct parametrs [weather_man.py -a year(yyyy) month(Mar)]")
-
-
-    elif argument == "-c":
-        try:
-            year = sys.argv[2]
-            if len(year) == 4:
-                month = sys.argv[3].capitalize()
-                draw_bar(year=year,month=month)
-            else:
-                print("Input correct format of year")
-        except:
-            print("Insert correct parametrs [weather_man.py -a year(yyyy) month(Mar)]")
-
-    else:
-        print("Invalid Input")
+#     elif argument == "-a":
+#         try:
+#             year = sys.argv[2]
+#             if len(year) == 4:
+#                 month = sys.argv[3].capitalize()
+#                 check_for_month(year=year,month=month)
+#             else:
+#                 print("Input correct format of year")
+#         except:
+#             print("Insert correct parametrs [weather_man.py -a year(yyyy) month(Mar)]")
 
 
+#     elif argument == "-c":
+#         try:
+#             year = sys.argv[2]
+#             if len(year) == 4:
+#                 month = sys.argv[3].capitalize()
+#                 draw_bar(year=year,month=month)
+#             else:
+#                 print("Input correct format of year")
+#         except:
+#             print("Insert correct parametrs [weather_man.py -a year(yyyy) month(Mar)]")
+
+#     else:
+#         print("Invalid Input")
 
 
-# if user_input == "-e":
-#     try:
-#         year = sys.argv[2]
-#         if len(year) == 4:
-#             check_for_year(year)
-#         else:
-#             print("Invalid Input")
-#     except:
-#         print("Insert correct parametrs [weather_man.py -a year(yyyy) month(Mar)]")
+if user_input == "-e":
+    try:
+        year = sys.argv[2]
+        if len(year) == 4:
+            check_for_year(year)
+        else:
+            print("Invalid Input")
+    except:
+        print("Insert correct parametrs [weather_man.py -a year(yyyy) month(Mar)]")
 
 
 
-# elif user_input == "-a":
+elif user_input == "-a":
     
-#     try:
-#         year = sys.argv[2]
-#         if len(year) == 4:
-#             month = sys.argv[3].capitalize()
-#             check_for_month(year=year,month=month)
-#         else:
-#             print("Input correct format of year")
-#     except:
-#         print("Insert correct parametrs [weather_man.py -a year(yyyy) month(Mar)]")
+    try:
+        year = sys.argv[2]
+        if len(year) == 4:
+            month = sys.argv[3].capitalize()
+            check_for_month(year=year,month=month)
+        else:
+            print("Input correct format of year")
+    except:
+        print("Insert correct parametrs [weather_man.py -a year(yyyy) month(Mar)]")
 
 
-# elif user_input == "-c":
+elif user_input == "-c":
     
-#     try:
-#         year = sys.argv[2]
-#         if len(year) == 4:
-#             month = sys.argv[3].capitalize()
-#             draw_bar(year=year,month=month)
-#         else:
-#             print("Input correct format of year")
-#     except:
-#         print("Insert correct parametrs [weather_man.py -a year(yyyy) month(Mar)]")
+    try:
+        year = sys.argv[2]
+        if len(year) == 4:
+            month = sys.argv[3].capitalize()
+            draw_bar(year=year,month=month)
+        else:
+            print("Input correct format of year")
+    except:
+        print("Insert correct parametrs [weather_man.py -a year(yyyy) month(Mar)]")
 
-
-switch(user_input)
     
 
 
